@@ -15,7 +15,7 @@ int bin(int*ptr,int n,int u,int l,int key){
 	//u=n-1;
 	mid= (l+u)/2;
 	for(i=0;i<n;i++){
-		if(ptr+i==ptr+mid)
+		if((ptr+i)==(ptr+mid))
 			return mid;
 		else if(ptr+i>ptr+mid)
 			return bin(ptr,n,u,mid+1,key);
@@ -47,5 +47,5 @@ void main(){
 	}
 	printf("\nEnter k\n");
 	scanf("%d",&k);
-	printf("Element found at %d",bin(ptr,n,n-1,0,k));
+	printf("Element found at %d",bin(ptr,n,n,0,k));
 }
