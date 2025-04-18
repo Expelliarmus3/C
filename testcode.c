@@ -1,4 +1,8 @@
 #include<stdio.h>
 void main(){
-	printf("Hello world");
+	int i=5;
+	i=i++;
+	printf("%d",i);
+	//printf("Hello world");
 }
+

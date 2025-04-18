@@ -9,4 +9,5 @@ void main(){
 		y+=pow(x,x);
 	}
 	printf("y =%d",y);
+	//return 0;
 }
